@@ -1,0 +1,222 @@
+/* Estilos generales */
+*{
+    padding: 0;
+    margin: 0;
+    /* borde (tipo de borde, ancho, color) 
+    border: solid 1px #000000;*/
+}
+
+/*****************************************************************/
+
+/* Estilos aplicados a la etiqueta body */
+body{
+    /* Fuente o tipografia */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Color del fondo: 
+    background-color: rgb(100, 255, 150);*/
+
+    /* Tamaño de la fuente */
+    font-size: 18px;
+}
+
+/* Estilos aplicados al id "main-conteiner": 
+#main-container{
+}
+*/
+
+/* Estilos aplicados a la clase "text": 
+.text{
+}
+*/
+
+header{
+    /*Imagen de fondo*/
+    background-image: url(../img/bradcam.png);
+    /*Solo se muestre una vez la imagen de fondo*/
+    background-repeat: no-repeat;
+    /*Fondo ocupe un tamaño de la pantalla*/
+    background-size: 100% 100%;
+    /*Adapatar al tamaño del navegador*/
+    height: 100vh; /* vh(viewport heigth) */
+    /*Color del texto*/
+    color: white;
+}
+
+/*Estilos al id "menu" que esta dentro de "header" que esta adentro de "main-container" */
+#main-conteiner #header #menu{
+    /*Espacio interior arriba y abajo, y derecha e inzquierda*/
+    padding: 50px 0; /*50px arriba y abajo, 0 derecha e izquierda*/
+}
+
+/*Estilos a la lista dentro del id "menu"*/
+header #menu ul{
+    margin: 0;
+    padding: 0;
+}
+/*Estilos a los elemtenos de las listas*/
+header #menu ul li{
+    /*Elementos(de la lista) sobre la misma linea*/
+    display: inline-block;
+    /*Espacio interior arriba, abajo, izquierda y derecha*/
+    padding: 20px;
+    /*Alineacion vertical*/
+    vertical-align: middle;
+}
+
+/*Estilos a los links de los elementos de la lista*/
+header #menu ul li a{
+    /*Tamaño de la fuente*/
+    font-size: 20px;
+    /*Color del texto*/
+    color: white;
+    /*Quitar subrayado (Decoracion del texto)*/
+    text-decoration: none;
+}
+
+/*Estilo de los links cuando pase el cursor por encima (:hover)*/
+header #menu ul li a:hover{
+    /*Ponerle subrayado al texto (Decoracion de texto)*/
+    text-decoration: underline;
+}
+
+/*Estilo a logo dentro de la lista del menu*/
+header #menu ul #logo{
+    /*Margen a la derecha*/
+    margin-right: 77%;
+    /*Margen a la derecha*/
+    margin-left: 100px;
+}
+
+/*************************************************************************************/
+/*Estilos a la etiqueta al contenido principal del header ( main )*/
+main{
+    /*Margen automatico a la izquierda y a la derecha*/
+    margin: 0 auto;
+    /*Ancho del contenido*/
+    width: 1400px;
+}
+
+main div{
+    /*Dividir los contenidos (los divs)*/
+    display: inline-block;
+    /*Centrar verticalmente los contenidos*/
+    vertical-align: middle;
+
+}
+
+/*Titulo del contenido principal*/
+main .text h1{
+    /*Tamaño de la fuente*/
+    font-size: 80px;
+}
+
+/*Descripcion del contenido principal*/
+main .text p{
+    font-size: 24px;
+    /*Espacio interior*/
+    padding: 20px 0;
+}
+
+/*Estilos al boton*/
+button{
+    /*Color de fondo del boton*/
+    background-color: #24d9e6;
+    /*Quitar bordes*/
+    border: 0;
+    /*Redondear los bordes*/
+    border-radius: 4px;
+
+    color: white;
+
+    /*Cursor cuando esté este sobre el*/
+    cursor: pointer;
+
+    font-size:24px;
+
+    /*Tamaño interno de 20x25 px*/
+    padding: 20px 25px;
+
+    /*Margen con los otros elementos*/
+    margin: 40px 0;
+}
+
+/*Estilos cuando el cursor este sobre el boton*/
+button:hover{
+    /*Color de fondo cuando el cursor este sobre el boton*/
+    background-color: #14929b;
+    text-decoration: underline;
+}
+
+/*Estilo a la imagen del contenido principal*/
+main .image{
+    /*Alinear hacia la derecha la iamgen*/
+    text-align: right;
+    /*Aumentar el ancho de la seccion del contenido*/
+    width: 537px;
+}
+
+/**************************************************************************************/
+
+/*Estilos a los contenidos que tienen clase layout*/
+.layout{
+    /*Ancho*/
+    width: 1280px;
+    margin: 250px auto;
+
+}
+
+.layout div{
+    /*Dividir los contenidos(divs)*/
+    display: inline-block;
+    /*Alineacion vertical*/
+    vertical-align: middle;
+}
+
+/*Estilos a los titulos de los layouts*/
+.layout h3{
+    /*Tamaño de la fuente*/
+    font-size: 48px;
+    /*Tamaño interno*/
+    padding: 25px 0;
+}
+
+.layout p{
+    padding: 25px 0;
+    /*Espacio del entre lineas*/
+    line-height: 32px;
+}
+
+/*Estilo del texto del layout-left*/
+.layout-left .text{
+    /*Ancho*/
+    width: 500px;
+}
+
+.layout-left .image{
+    /*Ancho*/
+    width: 770px;
+    /*Alineacion hacia la derecha*/
+    text-align: right;
+}
+
+/*Estilo del texto del layout-right*/
+.layout-right .text{
+    /*Ancho*/
+    width: 500px;
+}
+
+.layout-right .image{
+    /*Ancho*/
+    width: 770px;
+    /*Alineacion hacia la derecha*/
+    text-align: center;
+}
+
+/********************************************************************************/
+footer{
+    font-size: 18px;
+    background-color:#2493F8;
+    padding: 37px 20px;
+    color: white;
+    text-align: center;
+}
